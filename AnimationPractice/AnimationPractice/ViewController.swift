@@ -10,9 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var belowLabel: UILabel!
+    @IBOutlet weak var centerLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        UIView.animateWithDuration(2, animations: {
+            self.centerLabel.alpha = 2
+            }, completion: {
+                (value: Bool) in
+                self.centerLabel.hidden = true
+        })
+        
+        
+        UIView.animateWithDuration(2, animations: {
+            self.belowLabel.alpha = 2
+            }, completion: {
+                (value: Bool) in
+                self.belowLabel.hidden = true
+        })
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
