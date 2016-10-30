@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var belowLabel: UILabel!
     @IBOutlet weak var centerLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //making the labels disappear 
         UIView.animateWithDuration(2, animations: {
             self.centerLabel.alpha = 2
             }, completion: {
@@ -31,7 +33,11 @@ class ViewController: UIViewController {
                 self.belowLabel.hidden = true
         })
         
-        
+        UIView.animateWithDuration(2, animations: {
+            self.bottomLabel.alpha = 2 },
+                completion: { (value: Bool) in
+            self.bottomLabel.hidden = true
+        })
     }
 
     override func didReceiveMemoryWarning() {

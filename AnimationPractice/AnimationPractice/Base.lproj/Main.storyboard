@@ -29,17 +29,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0L-w5-WMw">
+                                <rect key="frame" x="249" y="490" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="d0q-k4-5ll" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0qe-L1-YwZ"/>
                             <constraint firstItem="2yf-41-vxL" firstAttribute="top" secondItem="d0q-k4-5ll" secondAttribute="bottom" constant="81" id="766-5R-qEf"/>
                             <constraint firstItem="2yf-41-vxL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Nv-lr-fxM"/>
+                            <constraint firstItem="F0L-w5-WMw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Kn-3e-cYC"/>
                             <constraint firstItem="d0q-k4-5ll" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m3c-c9-Evy"/>
+                            <constraint firstItem="F0L-w5-WMw" firstAttribute="top" secondItem="2yf-41-vxL" secondAttribute="bottom" constant="77" id="zfr-OZ-vNo"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="belowLabel" destination="2yf-41-vxL" id="fB4-zp-z9E"/>
+                        <outlet property="bottomLabel" destination="F0L-w5-WMw" id="aIx-nr-ebo"/>
                         <outlet property="centerLabel" destination="d0q-k4-5ll" id="Zw4-lf-zNu"/>
                     </connections>
                 </viewController>
